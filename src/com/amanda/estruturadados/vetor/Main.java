@@ -24,6 +24,8 @@ public class Main {
         vetor.adiciona("elemento 5");
         vetor.adiciona("elemento 6");
         System.out.println(vetor.getTamanho());
+        vetor.remove(2);
+        System.out.println(vetor);
 
 
 
