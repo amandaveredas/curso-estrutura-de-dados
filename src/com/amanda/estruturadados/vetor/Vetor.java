@@ -40,6 +40,20 @@ public class Vetor {
         return false;
     }
 
+    public boolean adiciona(int posicao, String elemento){
+        if (!(posicao >=0 && posicao<this.tamanho)){
+            throw new IllegalArgumentException("Posição inválida!");
+        }
+
+        for(int i=this.tamanho-1;i>=posicao;i--){
+            this.elementos[i+1] = this.elementos[i];
+        }
+        this.elementos[posicao] = elemento;
+        this.tamanho++;
+
+        return true;
+    }
+
     public int getTamanho() {
         return tamanho;
     }
@@ -79,4 +93,6 @@ public class Vetor {
         }
         return -1;
     }
+
+
 }
