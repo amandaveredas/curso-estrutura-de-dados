@@ -1,5 +1,7 @@
 package com.amanda.estruturadados.vetor;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -54,6 +56,28 @@ public class Main {
             System.out.println("Elemento não encontrado!");
         }
 
+        //usando a ArrayList
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("A");
+        arrayList.add("B");
+        System.out.println(arrayList);
+        arrayList.add(0,"C");
+        System.out.println(arrayList);
+        boolean existe = arrayList.contains("A");
+        if(existe){
+            System.out.println("Existe!");
+        }else{
+            System.out.println("Elemento não existe!");
+        }
+
+        int posicao = arrayList.indexOf("D");
+        System.out.println(posicao);
+
+        System.out.println(arrayList.get(2));
+
+        arrayList.remove(0);
+        System.out.println(arrayList);
+        System.out.println(arrayList.size());
 
 
 
