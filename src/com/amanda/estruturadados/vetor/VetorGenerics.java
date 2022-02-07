@@ -95,8 +95,10 @@ public class VetorGenerics<T> {
         if(posicao > -1){
             remove(posicao);
         }
+    }
 
-
+    public T get (int posicao){
+        this.busca(posicao);
     }
 
     private void aumentaCapacidade(){
