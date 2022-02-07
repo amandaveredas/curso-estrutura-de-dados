@@ -98,7 +98,7 @@ public class VetorGenerics<T> {
     }
 
     public T get (int posicao){
-        this.busca(posicao);
+        return this.busca(posicao);
     }
 
     private void aumentaCapacidade(){
@@ -109,6 +109,10 @@ public class VetorGenerics<T> {
             }
             this.elementos = elementosNovos;
         }
+    }
+
+    public void limpa(){
+        this.elementos = (T[]) new Object[this.elementos.length];
     }
 
     @Override

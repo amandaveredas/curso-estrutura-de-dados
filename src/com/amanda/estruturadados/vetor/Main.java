@@ -65,8 +65,11 @@ public class Main {
 
         System.out.println(contatos.ultimoIndice(contato4));
 
+        contatos.limpa();
+        System.out.println(contatos);
+        
         //usando a ArrayList
-//        ArrayList<String> arrayList = new ArrayList<>();
+        ArrayList<String> arrayList = new ArrayList<>();
 //        arrayList.add("A");
 //        arrayList.add("B");
 //        System.out.println(arrayList);
