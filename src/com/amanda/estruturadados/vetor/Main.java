@@ -27,6 +27,16 @@ public class Main {
         vetor.remove(2);
         System.out.println(vetor);
 
+        VetorObjetos vetorObjetos = new VetorObjetos(4);
+        vetorObjetos.adiciona(3);
+        vetorObjetos.adiciona(4);
+        vetorObjetos.adiciona(5);
+
+        System.out.println(vetorObjetos);
+        System.out.println(vetorObjetos.getTamanho());
+
+
+
 
 
 
