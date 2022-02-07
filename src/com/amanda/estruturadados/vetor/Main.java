@@ -40,10 +40,12 @@ public class Main {
         Contato contato3 = new Contato("Marluce","233333336","marluce@amanda.com.br");
         Contato contato4 = new Contato("Amanda","233333336","amanda@amanda.com.br");
 
-        VetorObjetos contatos = new VetorObjetos(3);
+        VetorGenerics<Contato> contatos = new VetorGenerics<>(3);
         contatos.adiciona(contato1);
         contatos.adiciona(contato2);
         contatos.adiciona(contato3);
+
+        System.out.println(contatos);
 
         int pos = contatos.busca(contato4);
         if (pos > -1){
@@ -52,7 +54,7 @@ public class Main {
             System.out.println("Elemento não encontrado!");
         }
 
-        System.out.println(contatos);
+
 
 
 
