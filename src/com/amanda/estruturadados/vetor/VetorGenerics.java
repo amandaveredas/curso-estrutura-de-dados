@@ -69,6 +69,15 @@ public class VetorGenerics<T> {
         return false;
     }
 
+    public int ultimoIndice(T elemento){
+        for(int i=this.tamanho-1;i>=0;i--){
+            if(this.elementos[i].equals(elemento)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public void remove(int posicao){
         if (!(posicao >=0 && posicao<this.tamanho)){
             throw new IllegalArgumentException("Posição inválida!");

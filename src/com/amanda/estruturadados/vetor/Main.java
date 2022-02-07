@@ -55,32 +55,36 @@ public class Main {
         }else{
             System.out.println("Elemento não encontrado!");
         }
+        contatos.adiciona(contato4);
+
 
         boolean contem = contatos.contem(contato4);
         System.out.println(contem);
 
+        System.out.println(contatos.ultimoIndice(contato4));
+
         //usando a ArrayList
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("A");
-        arrayList.add("B");
-        System.out.println(arrayList);
-        arrayList.add(0,"C");
-        System.out.println(arrayList);
-        boolean existe = arrayList.contains("A");
-        if(existe){
-            System.out.println("Existe!");
-        }else{
-            System.out.println("Elemento não existe!");
-        }
-
-        int posicao = arrayList.indexOf("D");
-        System.out.println(posicao);
-
-        System.out.println(arrayList.get(2));
-
-        arrayList.remove(0);
-        System.out.println(arrayList);
-        System.out.println(arrayList.size());
+//        ArrayList<String> arrayList = new ArrayList<>();
+//        arrayList.add("A");
+//        arrayList.add("B");
+//        System.out.println(arrayList);
+//        arrayList.add(0,"C");
+//        System.out.println(arrayList);
+//        boolean existe = arrayList.contains("A");
+//        if(existe){
+//            System.out.println("Existe!");
+//        }else{
+//            System.out.println("Elemento não existe!");
+//        }
+//
+//        int posicao = arrayList.indexOf("D");
+//        System.out.println(posicao);
+//
+//        System.out.println(arrayList.get(2));
+//
+//        arrayList.remove(0);
+//        System.out.println(arrayList);
+//        System.out.println(arrayList.size());
 
 
 
