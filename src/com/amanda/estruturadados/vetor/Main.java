@@ -56,6 +56,9 @@ public class Main {
             System.out.println("Elemento não encontrado!");
         }
 
+        boolean contem = contatos.contem(contato4);
+        System.out.println(contem);
+
         //usando a ArrayList
         ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("A");

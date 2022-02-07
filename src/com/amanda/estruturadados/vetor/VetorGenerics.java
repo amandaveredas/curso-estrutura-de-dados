@@ -63,6 +63,12 @@ public class VetorGenerics<T> {
         return -1;
     }
 
+    public boolean contem(T elemento){
+        if (busca(elemento) > -1)
+            return true;
+        return false;
+    }
+
     public void remove(int posicao){
         if (!(posicao >=0 && posicao<this.tamanho)){
             throw new IllegalArgumentException("Posição inválida!");
