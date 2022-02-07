@@ -1,5 +1,7 @@
 package com.amanda.estruturadados.vetor;
 
+import java.util.Arrays;
+
 public class Vetor {
 
     private String[] elementos;
@@ -36,6 +38,36 @@ public class Vetor {
             return true;
         }
         return false;
+    }
 
+    public int getTamanho() {
+        return tamanho;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append("[");
+
+        for (int i=0;i<this.tamanho-1;i++){
+            s.append(this.elementos[i]);
+            s.append(", ");
+        }
+
+        if(this.tamanho>0){
+            s.append(this.elementos[this.tamanho-1]);
+        }
+
+        s.append("]");
+
+        return s.toString();
+
+    }
+
+    public String busca(int posicao){
+        if (!(posicao >=0 && posicao<this.tamanho)){
+            throw new IllegalArgumentException("Posição inválida!");
+        }
+        return this.elementos[posicao];
     }
 }
