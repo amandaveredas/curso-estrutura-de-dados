@@ -64,7 +64,7 @@ public class VetorGenerics<T> {
     }
 
     public boolean contem(T elemento){
-        if (busca(elemento) > -1)
+        if (this.busca(elemento) > -1)
             return true;
         return false;
     }
@@ -88,6 +88,15 @@ public class VetorGenerics<T> {
         }
         this.elementos[tamanho-1] = null;
         this.tamanho--;
+    }
+
+    public void remove(T elemento){
+        int posicao = this.busca(elemento);
+        if(posicao > -1){
+            remove(posicao);
+        }
+
+
     }
 
     private void aumentaCapacidade(){

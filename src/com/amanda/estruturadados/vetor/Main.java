@@ -56,6 +56,8 @@ public class Main {
             System.out.println("Elemento não encontrado!");
         }
         contatos.adiciona(contato4);
+        contatos.remove(contato4);
+        System.out.println(contatos);
 
 
         boolean contem = contatos.contem(contato4);
