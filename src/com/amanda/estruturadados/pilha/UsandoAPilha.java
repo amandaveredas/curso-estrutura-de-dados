@@ -11,5 +11,7 @@ public class UsandoAPilha {
             pilha.empilha(i);
         }
         System.out.println(pilha);
+
+        System.out.println(pilha.estaVazio());
     }
 }
