@@ -67,7 +67,7 @@ public class Main {
 
         contatos.limpa();
         System.out.println(contatos);
-        
+
         //usando a ArrayList
         ArrayList<String> arrayList = new ArrayList<>();
 //        arrayList.add("A");
