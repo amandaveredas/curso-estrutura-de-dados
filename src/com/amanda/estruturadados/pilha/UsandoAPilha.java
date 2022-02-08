@@ -13,5 +13,7 @@ public class UsandoAPilha {
         System.out.println(pilha);
 
         System.out.println(pilha.estaVazio());
+
+        System.out.println(pilha.topo());
     }
 }
