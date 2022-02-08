@@ -4,16 +4,19 @@ public class UsandoAPilha {
     public static void main(String[] args) {
         Pilha<Integer> pilha = new Pilha<>();
 
-        System.out.println(pilha);
-        System.out.println(pilha.getTamanho());
+//        System.out.println(pilha);
+//        System.out.println(pilha.getTamanho());
 
         for(int i=1;i<=11;i++){
             pilha.empilha(i);
         }
         System.out.println(pilha);
+//
+//        System.out.println(pilha.estaVazio());
+//
+//        System.out.println(pilha.topo());
 
-        System.out.println(pilha.estaVazio());
-
-        System.out.println(pilha.topo());
+        System.out.println(pilha.desempilha());
+        System.out.println(pilha);
     }
 }
