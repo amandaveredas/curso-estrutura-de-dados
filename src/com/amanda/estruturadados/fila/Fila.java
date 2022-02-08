@@ -20,6 +20,16 @@ public class Fila<T> extends EstruturaEstatica<T> {
         return this.elementos[0];
     }
 
+    public T desenfileira(){
+        int posicao = 0;
+        if (this.estaVazio())
+            return null;
+        T elementoRemovido = this.elementos[posicao];
+        this.remove(posicao);
+
+        return elementoRemovido;
+    }
+
 
 
 

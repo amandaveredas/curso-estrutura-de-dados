@@ -12,5 +12,8 @@ public class UsandoAFila {
 
         System.out.println(fila);
         System.out.println(fila.espia());
+
+        fila.desenfileira();
+        System.out.println(fila);
     }
 }
